@@ -53,6 +53,8 @@
 		D162CE051904941500FC9AE6 /* StateMachineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StateMachineTests-Info.plist"; sourceTree = "<group>"; };
 		D162CE071904941500FC9AE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D162CE091904941500FC9AE6 /* StateMachineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateMachineTests.m; sourceTree = "<group>"; };
+		D162CE13190494CD00FC9AE6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D162CE141904964C00FC9AE6 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,8 @@
 		D162CDE11904941500FC9AE6 = {
 			isa = PBXGroup;
 			children = (
+				D162CE141904964C00FC9AE6 /* LICENSE.md */,
+				D162CE13190494CD00FC9AE6 /* README.md */,
 				D162CDEF1904941500FC9AE6 /* StateMachine */,
 				D162CE031904941500FC9AE6 /* StateMachineTests */,
 				D162CDEC1904941500FC9AE6 /* Frameworks */,
