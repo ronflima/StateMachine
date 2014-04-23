@@ -10,4 +10,8 @@
 
 @interface StateMachine : NSObject
 
+- (void)addState:(NSString *)state;
+- (void)addTransitionFromState:(NSString *)origin toState:(NSString *)destiny;
+- (void)addStateMapping:(NSDictionary *)stateMap;
+
 @end

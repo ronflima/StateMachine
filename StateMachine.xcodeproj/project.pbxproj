@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D110A4551905EC1200592094 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = D110A4541905EC1200592094 /* Graph.m */; };
 		D162CDEE1904941500FC9AE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D162CDED1904941500FC9AE6 /* Foundation.framework */; };
 		D162CDF31904941500FC9AE6 /* StateMachine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D162CDF21904941500FC9AE6 /* StateMachine.h */; };
 		D162CDF51904941500FC9AE6 /* StateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = D162CDF41904941500FC9AE6 /* StateMachine.m */; };
@@ -15,7 +16,7 @@
 		D162CDFF1904941500FC9AE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D162CDFE1904941500FC9AE6 /* UIKit.framework */; };
 		D162CE021904941500FC9AE6 /* libStateMachine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D162CDEA1904941500FC9AE6 /* libStateMachine.a */; };
 		D162CE081904941500FC9AE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D162CE061904941500FC9AE6 /* InfoPlist.strings */; };
-		D162CE0A1904941500FC9AE6 /* StateMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D162CE091904941500FC9AE6 /* StateMachineTests.m */; };
+		D162CE0A1904941500FC9AE6 /* GraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D162CE091904941500FC9AE6 /* GraphTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D110A4531905EC1200592094 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		D110A4541905EC1200592094 /* Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graph.m; sourceTree = "<group>"; };
 		D162CDEA1904941500FC9AE6 /* libStateMachine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStateMachine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D162CDED1904941500FC9AE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D162CDF11904941500FC9AE6 /* StateMachine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StateMachine-Prefix.pch"; sourceTree = "<group>"; };
@@ -52,7 +55,7 @@
 		D162CDFE1904941500FC9AE6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D162CE051904941500FC9AE6 /* StateMachineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StateMachineTests-Info.plist"; sourceTree = "<group>"; };
 		D162CE071904941500FC9AE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D162CE091904941500FC9AE6 /* StateMachineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateMachineTests.m; sourceTree = "<group>"; };
+		D162CE091904941500FC9AE6 /* GraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphTests.m; sourceTree = "<group>"; };
 		D162CE13190494CD00FC9AE6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D162CE141904964C00FC9AE6 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D110A4521905EBC200592094 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				D110A4531905EC1200592094 /* Graph.h */,
+				D110A4541905EC1200592094 /* Graph.m */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 		D162CDE11904941500FC9AE6 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +126,7 @@
 		D162CDEF1904941500FC9AE6 /* StateMachine */ = {
 			isa = PBXGroup;
 			children = (
+				D110A4521905EBC200592094 /* Graph */,
 				D162CDF21904941500FC9AE6 /* StateMachine.h */,
 				D162CDF41904941500FC9AE6 /* StateMachine.m */,
 				D162CDF01904941500FC9AE6 /* Supporting Files */,
@@ -132,7 +145,7 @@
 		D162CE031904941500FC9AE6 /* StateMachineTests */ = {
 			isa = PBXGroup;
 			children = (
-				D162CE091904941500FC9AE6 /* StateMachineTests.m */,
+				D162CE091904941500FC9AE6 /* GraphTests.m */,
 				D162CE041904941500FC9AE6 /* Supporting Files */,
 			);
 			path = StateMachineTests;
@@ -228,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D110A4551905EC1200592094 /* Graph.m in Sources */,
 				D162CDF51904941500FC9AE6 /* StateMachine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,7 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D162CE0A1904941500FC9AE6 /* StateMachineTests.m in Sources */,
+				D162CE0A1904941500FC9AE6 /* GraphTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +423,7 @@
 				D162CE0F1904941500FC9AE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D162CE101904941500FC9AE6 /* Build configuration list for PBXNativeTarget "StateMachineTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +432,7 @@
 				D162CE121904941500FC9AE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,27 @@
 
 #import "StateMachine.h"
 
+@interface StateMachine ()
+
+@end
+
 @implementation StateMachine
+
+#pragma mark - State setup
+
+- (void)addState:(NSString *)state
+{
+    
+}
+
+- (void)addTransitionFromState:(NSString *)origin toState:(NSString *)destiny
+{
+    
+}
+
+- (void)addStateMapping:(NSDictionary *)stateMap
+{
+    
+}
 
 @end
