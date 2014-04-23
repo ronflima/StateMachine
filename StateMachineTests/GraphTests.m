@@ -1,6 +1,6 @@
 //
-//  StateMachineTests.m
-//  StateMachineTests
+//  GraphTests.m
+//  GraphTests
 //
 //  Created by Ronaldo Faria Lima on 20/04/14.
 //  Copyright (c) 2014 Ronaldo Faria Lima. All rights reserved.
