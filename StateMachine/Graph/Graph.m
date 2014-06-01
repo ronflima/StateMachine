@@ -57,6 +57,19 @@
     if (! [edges containsObject:destination]) {
         [edges addObject:destination];
     }
+    [self.adjacencyList setValue:edges forKey:origin];
+}
+
+- (NSSet *)edgesForVertex:(NSString *)vertex
+{
+    if ([self.allVertexes containsObject:vertex]) {
+        // It is a oriented graph. So, we get only the edges flowing out of the vertex
+        // Edges coming to the vertex are ignored and makes sense only in non-oriented graphs,
+        // which is not the case.
+        NSSet *edges = [self.adjacencyList valueForKey:vertex];
+        return edges;
+    }
+    return nil;
 }
 
 #pragma mark - Getters and Setters

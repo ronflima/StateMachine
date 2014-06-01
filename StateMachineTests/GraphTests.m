@@ -30,21 +30,18 @@
     // |         ^
     // V         |
     // C -> D -> E
-    graph = [[Graph alloc] init];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    graph = [[Graph alloc] initWithMapping:mapping];
 }
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
 // Test graph initialization by using a graph mapping
 - (void)testGraphInitialization
 {
-    Graph *aGraph = [[Graph alloc] initWithMapping:mapping];
-    XCTAssertEqual(aGraph.allVertexes.count, 7, @"Wrong number of vertexes");
+    XCTAssertEqual(graph.allVertexes.count, 7, @"Wrong number of vertexes");
 }
 
 // Test graph addMapping: method
@@ -74,6 +71,16 @@
         }];
     }
     XCTAssertEqual(graph.allVertexes.count, 7, @"Wrong number of vertexes. Found %d", graph.allVertexes.count);
+}
+
+// Test edges from a given vertex
+- (void)testEdges
+{
+    for (NSString *vertex in mapping) {
+        NSSet *edges = [graph edgesForVertex:vertex];
+        NSInteger expectedCount = [mapping[vertex] count];
+        XCTAssertEqual(edges.count, expectedCount, @"Wrong number of edges. Expected: %d - Found: %d", expectedCount, edges.count);
+    }
 }
 
 

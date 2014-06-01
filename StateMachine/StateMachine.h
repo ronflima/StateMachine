@@ -14,6 +14,10 @@
 //! let the state change to trigger appropriate responses.
 @interface StateMachine : NSObject
 
+//! \property presentState
+//! \brief Actual state
+@property (weak, nonatomic, readonly) NSString *presentState;
+
 //! \brief Adds a new state to the state machine's state table.
 - (void)addState:(NSString *)state;
 
@@ -28,5 +32,22 @@
 //! \remarks The state map functions like a adjacency list, with each key as a state and the contents put as an array
 //! of items.
 - (void)addStateMapping:(NSDictionary *)stateMap;
+
+//! \brief Sets the initial state of the state machine
+//! return YES on success
+//! return NO if initial state setting failed
+- (BOOL)setInitialState:(NSString *)state;
+
+//! \brief Check if state machine can transition to a given state
+//! \param newState state to check if transition is possible
+//! \return YES if state transition is supported
+//! \return NO if state transition is invalid
+- (BOOL)canMoveToState:(NSString *)newState;
+
+//! \brief Moves the state machine to a new state
+//! \param newState state to move to
+//! \return YES if transition was successful
+//! \return NO if transition failed
+- (BOOL)moveToState:(NSString *)newState;
 
 @end

@@ -11,6 +11,10 @@
 //! \internal
 //! \class Graph
 //! \brief Simple implementation of an oriented graph algorithm
+//! \remarks This is not a full implementation of a graph algorithm. This class contains only
+//! the necessary information and methods to feed the state machine about possible state transitions.
+//! The aim of this implementation is to be as simple as possible, without any extra functionality that is not
+//! really necessary.
 @interface Graph : NSObject
 
 @property (strong, nonatomic, readonly) NSArray *allVertexes;
@@ -36,5 +40,11 @@
 //! \remarks If one or both vertexes do not exist in current graph setup, add them.
 //! If they are already there, simply add the edge
 - (void)addEdgeFromVertex:(NSString *)origin toVertex:(NSString *)destination;
+
+//! \brief Getter. Returns a list of edges for a given vertex
+//! \param vertex Vertex to get edges from
+//! \return NSSet if successful
+//! \return nil if there are no edges for this vertex
+- (NSSet *)edgesForVertex:(NSString *)vertex;
 
 @end

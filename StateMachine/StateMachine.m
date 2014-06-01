@@ -19,6 +19,9 @@
 @end
 
 @implementation StateMachine
+{
+    NSInteger _presentState;
+}
 
 #pragma mark - Public Methods
 
@@ -37,6 +40,38 @@
     [self.graph addMapping:stateMap];
 }
 
+#define STATE_IN_GRAPH(state) [self.graph.allVertexes containsObject:state]
+
+- (BOOL)setInitialState:(NSString *)state
+{
+    if (STATE_IN_GRAPH(state)) {
+        _presentState = [self.graph.allVertexes indexOfObject:state];
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)canMoveToState:(NSString *)newState
+{
+    if (STATE_IN_GRAPH(newState)) {
+        NSString *currState = [self.graph.allVertexes objectAtIndex:_presentState];
+        NSSet *edges = [self.graph edgesForVertex:currState];
+        return [edges containsObject:newState];
+    }
+    return NO;
+}
+
+- (BOOL)moveToState:(NSString *)newState
+{
+    if (STATE_IN_GRAPH(newState)) {
+        if ([self canMoveToState:newState]) {
+            _presentState = [self.graph.allVertexes indexOfObject:newState];
+            return YES;
+        }
+    }
+    return NO;
+}
+
 #pragma mark - Getters and Setters
 
 - (Graph *)graph
@@ -45,6 +80,11 @@
         _graph = [[Graph alloc] init];
     }
     return _graph;
+}
+
+- (NSString *)presentState
+{
+    return [self.graph.allVertexes objectAtIndex:_presentState];
 }
 
 @end
