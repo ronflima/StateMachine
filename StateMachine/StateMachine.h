@@ -18,6 +18,13 @@
 //! \brief Actual state
 @property (weak, nonatomic, readonly) NSString *presentState;
 
+//! \brief Innstance initializer
+//! \param mapping State mapping
+//! \param initialState Initial state to set
+//! \return Valid instance on success
+//! \return nil on failure
+- (instancetype)initWithMapping:(NSDictionary *)mapping andInitialState:(NSString *)initialState;
+
 //! \brief Adds a new state to the state machine's state table.
 - (void)addState:(NSString *)state;
 

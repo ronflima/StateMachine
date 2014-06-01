@@ -23,6 +23,15 @@
     NSInteger _presentState;
 }
 
+- (instancetype)initWithMapping:(NSDictionary *)mapping andInitialState:(NSString *)initialState
+{
+    if ((self = [super init])) {
+        [self addStateMapping:mapping];
+        [self setInitialState:initialState];
+    }
+    return self;
+}
+
 #pragma mark - Public Methods
 
 - (void)addState:(NSString *)state

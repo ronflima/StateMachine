@@ -17,6 +17,7 @@
 		D162CE021904941500FC9AE6 /* libStateMachine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D162CDEA1904941500FC9AE6 /* libStateMachine.a */; };
 		D162CE081904941500FC9AE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D162CE061904941500FC9AE6 /* InfoPlist.strings */; };
 		D162CE0A1904941500FC9AE6 /* GraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D162CE091904941500FC9AE6 /* GraphTests.m */; };
+		D1C8DCB7193BB26100675E16 /* StateMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C8DCB6193BB26100675E16 /* StateMachineTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		D162CE091904941500FC9AE6 /* GraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphTests.m; sourceTree = "<group>"; };
 		D162CE13190494CD00FC9AE6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D162CE141904964C00FC9AE6 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
+		D1C8DCB6193BB26100675E16 /* StateMachineTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateMachineTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		D162CE031904941500FC9AE6 /* StateMachineTests */ = {
 			isa = PBXGroup;
 			children = (
+				D1C8DCB6193BB26100675E16 /* StateMachineTests.m */,
 				D162CE091904941500FC9AE6 /* GraphTests.m */,
 				D162CE041904941500FC9AE6 /* Supporting Files */,
 			);
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D162CE0A1904941500FC9AE6 /* GraphTests.m in Sources */,
+				D1C8DCB7193BB26100675E16 /* StateMachineTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
