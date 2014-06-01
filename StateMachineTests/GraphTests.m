@@ -47,6 +47,14 @@
     XCTAssertEqual(aGraph.allVertexes.count, 7, @"Wrong number of vertexes");
 }
 
+// Test graph addMapping: method
+- (void)testGraphAddMapping
+{
+    Graph *aGraph = [[Graph alloc] init];
+    [aGraph addMapping:mapping];
+    XCTAssertEqual(aGraph.allVertexes.count, 7, @"Wrong number of vertexes");
+}
+
 // Test vertex addition method
 - (void)testVertexAdd
 {

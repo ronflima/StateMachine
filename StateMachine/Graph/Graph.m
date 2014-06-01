@@ -21,18 +21,23 @@
 - (instancetype)initWithMapping:(NSDictionary *)mapping
 {
     if ((self = [super init])) {
-        // Traverses the mapping, creating the adjacency list
-        for (NSString *origin in mapping) {
-            NSArray *destinations = mapping[origin];
-            for (NSString *destination in destinations) {
-                [self addEdgeFromVertex:origin toVertex:destination];
-            }
-        }
+        [self addMapping:mapping];
     }
     return self;
 }
 
 #pragma mark - Public Methods
+
+- (void)addMapping:(NSDictionary *)mapping
+{
+    // Traverses the mapping, creating the adjacency list
+    for (NSString *origin in mapping) {
+        NSArray *destinations = mapping[origin];
+        for (NSString *destination in destinations) {
+            [self addEdgeFromVertex:origin toVertex:destination];
+        }
+    }
+}
 
 - (void)addVertex:(NSString *)vertex
 {

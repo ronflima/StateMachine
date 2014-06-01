@@ -21,6 +21,10 @@
 //! \return nil on error
 - (instancetype)initWithMapping:(NSDictionary *)mapping;
 
+//! \brief Adds internal mapping of states and transitions
+//! \param mapping Mapping to set the graph to 
+- (void)addMapping:(NSDictionary *)mapping;
+
 //! \brief Add a vertex to the graph setup
 //! \param vertex Vertex to add
 //! \remarks If the vertex is already added, ignore it.
