@@ -9,6 +9,9 @@
 #import "StateMachine.h"
 #import "Graph.h"
 
+//! \internal
+//! \category StateMachine
+//! \brief Class Extension to hold private declarations
 @interface StateMachine ()
 
 //! \internal

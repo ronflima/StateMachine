@@ -17,6 +17,8 @@
 //! really necessary.
 @interface Graph : NSObject
 
+//! \property allVertexes
+//! \brief A list of all configured vertexes
 @property (strong, nonatomic, readonly) NSArray *allVertexes;
 
 //! \brief Initializes the graph using a map of vertexes and edges

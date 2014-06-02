@@ -8,6 +8,7 @@
 
 #import "Graph.h"
 
+//! \internal
 @interface Graph ()
 
 @property (strong, nonatomic) NSMutableDictionary *adjacencyList;
