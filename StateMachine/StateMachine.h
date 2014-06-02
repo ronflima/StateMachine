@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StateMachineDelegate.h"
 
 //! \class StateMachine
 //! \brief State machine is a simple implementation of a state machine. It manages
@@ -17,6 +18,11 @@
 //! \property presentState
 //! \brief Actual state
 @property (weak, nonatomic, readonly) NSString *presentState;
+
+//! \property delegate
+//! \brief State machine's delegate
+//! \see StateMachineDelegate
+@property (weak, nonatomic) id <StateMachineDelegate> delegate;
 
 //! \brief Innstance initializer
 //! \param mapping State mapping

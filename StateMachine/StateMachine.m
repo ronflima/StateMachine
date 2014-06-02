@@ -53,6 +53,9 @@
 - (void)reset
 {
     _presentState = _initialState;
+    if (self.delegate && [self.delegate respondsToSelector:@selector(stateMachineDidReset)]) {
+        [self.delegate stateMachineDidReset];
+    }
 }
 
 #define STATE_IN_GRAPH(state) [self.graph.allVertexes containsObject:state]
@@ -80,7 +83,14 @@
 {
     if (STATE_IN_GRAPH(newState)) {
         if ([self canMoveToState:newState]) {
+            NSString *currentState = self.presentState;
+            if (self.delegate && [self.delegate respondsToSelector:@selector(stateMachine:willMoveFromState:toState:)]) {
+                [self.delegate stateMachine:self willMoveFromState:currentState toState:newState];
+            }
             _presentState = [self.graph.allVertexes indexOfObject:newState];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(stateMachine:didMoveFromState:toState:)]) {
+                [self.delegate stateMachine:self didMoveFromState:currentState toState:newState];
+            }
             return YES;
         }
     }

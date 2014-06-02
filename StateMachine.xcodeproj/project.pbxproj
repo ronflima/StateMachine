@@ -60,6 +60,7 @@
 		D162CE13190494CD00FC9AE6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D162CE141904964C00FC9AE6 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
 		D1C8DCB6193BB26100675E16 /* StateMachineTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateMachineTests.m; sourceTree = "<group>"; };
+		D1C8DCB8193BFC8700675E16 /* StateMachineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachineDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				D110A4521905EBC200592094 /* Graph */,
+				D1C8DCB8193BFC8700675E16 /* StateMachineDelegate.h */,
 				D162CDF21904941500FC9AE6 /* StateMachine.h */,
 				D162CDF41904941500FC9AE6 /* StateMachine.m */,
 				D162CDF01904941500FC9AE6 /* Supporting Files */,
