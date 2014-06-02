@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "StateMachine.h"
+#import "StateMachineTestDelegate.h"
 
 @interface StateMachineTests : XCTestCase
 
@@ -74,6 +75,17 @@
     XCTAssertEqualObjects(@"G", stateMachine.presentState, @"Expected State: G - Found State: %@", stateMachine.presentState);
     [stateMachine reset];
     XCTAssertEqualObjects(@"A", stateMachine.presentState, @"Expected State: A - Found State: %@", stateMachine.presentState);
+}
+
+- (void)testDelegate
+{
+    StateMachineTestDelegate *delegate = [[StateMachineTestDelegate alloc] init];
+    stateMachine = [stateMachine initWithMapping:mapping andInitialState:@"A"];
+    [stateMachine setDelegate:delegate];
+    for (NSString *state in @[@"C", @"D", @"E", @"F", @"G"]) {
+        [stateMachine moveToState:state];
+    }
+    XCTAssertEqualObjects(@"G", stateMachine.presentState, @"Expected State: G - Found State: %@", stateMachine.presentState);
 }
 
 @end

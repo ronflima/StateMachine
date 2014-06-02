@@ -18,6 +18,8 @@
 		D162CE081904941500FC9AE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D162CE061904941500FC9AE6 /* InfoPlist.strings */; };
 		D162CE0A1904941500FC9AE6 /* GraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D162CE091904941500FC9AE6 /* GraphTests.m */; };
 		D1C8DCB7193BB26100675E16 /* StateMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C8DCB6193BB26100675E16 /* StateMachineTests.m */; };
+		D1C8DCB9193C077B00675E16 /* StateMachineDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1C8DCB8193BFC8700675E16 /* StateMachineDelegate.h */; };
+		D1C8DCBC193C07AF00675E16 /* StateMachineTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C8DCBB193C07AF00675E16 /* StateMachineTestDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				D1C8DCB9193C077B00675E16 /* StateMachineDelegate.h in CopyFiles */,
 				D162CDF31904941500FC9AE6 /* StateMachine.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +64,8 @@
 		D162CE141904964C00FC9AE6 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
 		D1C8DCB6193BB26100675E16 /* StateMachineTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateMachineTests.m; sourceTree = "<group>"; };
 		D1C8DCB8193BFC8700675E16 /* StateMachineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachineDelegate.h; sourceTree = "<group>"; };
+		D1C8DCBA193C07AF00675E16 /* StateMachineTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachineTestDelegate.h; sourceTree = "<group>"; };
+		D1C8DCBB193C07AF00675E16 /* StateMachineTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateMachineTestDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +157,8 @@
 				D1C8DCB6193BB26100675E16 /* StateMachineTests.m */,
 				D162CE091904941500FC9AE6 /* GraphTests.m */,
 				D162CE041904941500FC9AE6 /* Supporting Files */,
+				D1C8DCBA193C07AF00675E16 /* StateMachineTestDelegate.h */,
+				D1C8DCBB193C07AF00675E16 /* StateMachineTestDelegate.m */,
 			);
 			path = StateMachineTests;
 			sourceTree = "<group>";
@@ -257,6 +264,7 @@
 			files = (
 				D162CE0A1904941500FC9AE6 /* GraphTests.m in Sources */,
 				D1C8DCB7193BB26100675E16 /* StateMachineTests.m in Sources */,
+				D1C8DCBC193C07AF00675E16 /* StateMachineTestDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
