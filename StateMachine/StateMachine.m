@@ -21,6 +21,7 @@
 @implementation StateMachine
 {
     NSInteger _presentState;
+    NSInteger _initialState;
 }
 
 - (instancetype)initWithMapping:(NSDictionary *)mapping andInitialState:(NSString *)initialState
@@ -49,12 +50,17 @@
     [self.graph addMapping:stateMap];
 }
 
+- (void)reset
+{
+    _presentState = _initialState;
+}
+
 #define STATE_IN_GRAPH(state) [self.graph.allVertexes containsObject:state]
 
 - (BOOL)setInitialState:(NSString *)state
 {
     if (STATE_IN_GRAPH(state)) {
-        _presentState = [self.graph.allVertexes indexOfObject:state];
+        _presentState = _initialState = [self.graph.allVertexes indexOfObject:state];
         return YES;
     }
     return NO;

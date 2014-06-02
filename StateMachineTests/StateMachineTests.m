@@ -65,4 +65,15 @@
     XCTAssertTrue(result, @"Wrong value returned");
 }
 
+- (void)testReset
+{
+    stateMachine = [stateMachine initWithMapping:mapping andInitialState:@"A"];
+    for (NSString *state in @[@"C", @"D", @"E", @"F", @"G"]) {
+        [stateMachine moveToState:state];
+    }
+    XCTAssertEqualObjects(@"G", stateMachine.presentState, @"Expected State: G - Found State: %@", stateMachine.presentState);
+    [stateMachine reset];
+    XCTAssertEqualObjects(@"A", stateMachine.presentState, @"Expected State: A - Found State: %@", stateMachine.presentState);
+}
+
 @end

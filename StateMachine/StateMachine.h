@@ -57,4 +57,7 @@
 //! \return NO if transition failed
 - (BOOL)moveToState:(NSString *)newState;
 
+//! \brief Resets the state machine to its initial state.
+- (void)reset;
+
 @end
