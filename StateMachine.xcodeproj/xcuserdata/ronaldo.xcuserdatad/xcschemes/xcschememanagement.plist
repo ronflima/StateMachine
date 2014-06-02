@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Documentation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>StateMachine.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>D162CDF91904941500FC9AE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1C8DCBE193C0AE400675E16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1C8DCC5193C0CD400675E16</key>
 		<dict>
 			<key>primary</key>
 			<true/>

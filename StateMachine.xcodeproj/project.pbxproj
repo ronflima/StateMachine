@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D1C8DCC5193C0CD400675E16 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D1C8DCC6193C0CD400675E16 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				D1C8DCC9193C0CFC00675E16 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		D110A4551905EC1200592094 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = D110A4541905EC1200592094 /* Graph.m */; };
 		D162CDEE1904941500FC9AE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D162CDED1904941500FC9AE6 /* Foundation.framework */; };
@@ -66,6 +80,7 @@
 		D1C8DCB8193BFC8700675E16 /* StateMachineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachineDelegate.h; sourceTree = "<group>"; };
 		D1C8DCBA193C07AF00675E16 /* StateMachineTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachineTestDelegate.h; sourceTree = "<group>"; };
 		D1C8DCBB193C07AF00675E16 /* StateMachineTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateMachineTestDelegate.m; sourceTree = "<group>"; };
+		D1C8DCBD193C09B500675E16 /* documentation.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = documentation.cfg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +118,7 @@
 		D162CDE11904941500FC9AE6 = {
 			isa = PBXGroup;
 			children = (
+				D1C8DCBD193C09B500675E16 /* documentation.cfg */,
 				D162CE141904964C00FC9AE6 /* LICENSE.md */,
 				D162CE13190494CD00FC9AE6 /* README.md */,
 				D162CDEF1904941500FC9AE6 /* StateMachine */,
@@ -233,6 +249,7 @@
 			targets = (
 				D162CDE91904941500FC9AE6 /* StateMachine */,
 				D162CDF91904941500FC9AE6 /* StateMachineTests */,
+				D1C8DCC5193C0CD400675E16 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +264,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D1C8DCC9193C0CFC00675E16 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$DOXYGEN_PATH $SOURCE_ROOT/documentation.cfg\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D162CDE61904941500FC9AE6 /* Sources */ = {
@@ -418,6 +451,22 @@
 			};
 			name = Release;
 		};
+		D1C8DCC7193C0CD400675E16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D1C8DCC8193C0CD400675E16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -447,6 +496,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D1C8DCC6193C0CD400675E16 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C8DCC7193C0CD400675E16 /* Debug */,
+				D1C8DCC8193C0CD400675E16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
