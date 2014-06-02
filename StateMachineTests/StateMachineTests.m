@@ -43,4 +43,26 @@
     XCTAssertEqualObjects(stateMachine.presentState, @"A", @"Wrong initial state. Expected: A - Found: %@", stateMachine.presentState);
 }
 
+- (void)testNavigation
+{
+    stateMachine = [stateMachine initWithMapping:mapping andInitialState:@"A"];
+    BOOL result = [stateMachine canMoveToState:@"B"];
+    XCTAssertTrue(result, @"Should be possible to go to state B, but it faled");
+    
+    result = [stateMachine moveToState:@"B"];
+    XCTAssertTrue(result, @"Failed to move to state B");
+    XCTAssertEqualObjects(@"B", stateMachine.presentState, @"Expected State: B - Found State: %@", stateMachine.presentState);
+    
+    result = [stateMachine canMoveToState:@"C"];
+    XCTAssertFalse(result, @"Transition to state C should not be allowed");
+    
+    result = [stateMachine moveToState:@"C"];
+    XCTAssertEqualObjects(@"B", stateMachine.presentState, @"Expected State: B - Found State: %@", stateMachine.presentState);
+    XCTAssertFalse(result, @"Wrong value returned");
+    
+    result = [stateMachine moveToState:@"F"];
+    XCTAssertEqualObjects(@"F", stateMachine.presentState, @"Expected State: F - Found State: %@", stateMachine.presentState);
+    XCTAssertTrue(result, @"Wrong value returned");
+}
+
 @end
