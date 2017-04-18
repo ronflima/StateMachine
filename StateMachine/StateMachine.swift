@@ -69,8 +69,9 @@ public struct StateMachine {
             throw StateMachineError.invalidStateTransition
         }
         delegate?.willTransition?(from: _currState, to: newState)
+        let lastState = _currState
         _currState = newState
-        delegate?.didTransition?(from: _currState, to: newState)
+        delegate?.didTransition?(from: lastState, to: newState)
     }
     
     /// Adds a state transition from a state to another.

@@ -7,8 +7,31 @@
 //
 
 import XCTest
-
 @testable import StateMachine
+
+class FullDelegate: StateMachineDelegate {
+    func willTransition(from: String, to: String) {
+        if from == "A" && to != "B" {
+            XCTFail()
+        } else if from == "B" && to != "C" {
+            XCTFail()
+        }
+    }
+    
+    func didTransition(from: String, to: String) {
+        if from == "A" && to != "B" {
+            XCTFail()
+        } else if from == "B" && to != "C" {
+            XCTFail()
+        }
+    }
+    
+    func failedToTransition(from: String, to: String) {
+        if from == "C" && to != "D" {
+            XCTFail()
+        }
+    }
+}
 
 class StateMachineTests: XCTestCase {
     var sm: StateMachine!
@@ -63,6 +86,25 @@ class StateMachineTests: XCTestCase {
             try sm.setCurrentState(to: "B")
         } catch {
             XCTFail()
+        }
+    }
+    
+    func testFullDelegate() {
+        let fullDelegate = FullDelegate()
+        sm.delegate = fullDelegate
+        do {
+            // Those must work
+            try sm.setCurrentState(to: "B")
+            try sm.setCurrentState(to: "C")
+        } catch {
+            XCTFail()
+        }
+        do {
+            // Must fail.
+            try sm.setCurrentState(to: "D")
+            XCTFail()
+        } catch {
+            // Do nothing.
         }
     }
 }
