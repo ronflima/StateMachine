@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>StateMachineTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -33,6 +38,21 @@
 			<true/>
 		</dict>
 		<key>D1C8DCC5193C0CD400675E16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1D951251E9FAD6C00778C78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1D951321E9FADC000778C78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1D951411E9FE59300778C78</key>
 		<dict>
 			<key>primary</key>
 			<true/>

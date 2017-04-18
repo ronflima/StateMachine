@@ -6,123 +6,67 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		D1C8DCC5193C0CD400675E16 /* Documentation */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = D1C8DCC6193C0CD400675E16 /* Build configuration list for PBXAggregateTarget "Documentation" */;
-			buildPhases = (
-				D1C8DCC9193C0CFC00675E16 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = Documentation;
-			productName = Documentation;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		D110A4551905EC1200592094 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = D110A4541905EC1200592094 /* Graph.m */; };
-		D162CDEE1904941500FC9AE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D162CDED1904941500FC9AE6 /* Foundation.framework */; };
-		D162CDF31904941500FC9AE6 /* StateMachine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D162CDF21904941500FC9AE6 /* StateMachine.h */; };
-		D162CDF51904941500FC9AE6 /* StateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = D162CDF41904941500FC9AE6 /* StateMachine.m */; };
-		D162CDFC1904941500FC9AE6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D162CDFB1904941500FC9AE6 /* XCTest.framework */; };
-		D162CDFD1904941500FC9AE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D162CDED1904941500FC9AE6 /* Foundation.framework */; };
-		D162CDFF1904941500FC9AE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D162CDFE1904941500FC9AE6 /* UIKit.framework */; };
-		D162CE021904941500FC9AE6 /* libStateMachine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D162CDEA1904941500FC9AE6 /* libStateMachine.a */; };
-		D162CE081904941500FC9AE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D162CE061904941500FC9AE6 /* InfoPlist.strings */; };
-		D162CE0A1904941500FC9AE6 /* GraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D162CE091904941500FC9AE6 /* GraphTests.m */; };
-		D1C8DCB7193BB26100675E16 /* StateMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C8DCB6193BB26100675E16 /* StateMachineTests.m */; };
-		D1C8DCB9193C077B00675E16 /* StateMachineDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D1C8DCB8193BFC8700675E16 /* StateMachineDelegate.h */; };
-		D1C8DCBC193C07AF00675E16 /* StateMachineTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C8DCBB193C07AF00675E16 /* StateMachineTestDelegate.m */; };
+		D1116BBC1EA58EA3006348FB /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1116BBB1EA58EA3006348FB /* StateMachine.swift */; };
+		D1D9513D1E9FBEB500778C78 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9513C1E9FBEB500778C78 /* Graph.swift */; };
+		D1D951451E9FE59300778C78 /* StateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D951441E9FE59300778C78 /* StateMachineTests.swift */; };
+		D1D951471E9FE59300778C78 /* StateMachine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D951331E9FADC000778C78 /* StateMachine.framework */; };
+		D1D9514E1E9FE5AE00778C78 /* GraphTestCenarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9514D1E9FE5AE00778C78 /* GraphTestCenarios.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D162CE001904941500FC9AE6 /* PBXContainerItemProxy */ = {
+		D1D951481E9FE59300778C78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D162CDE21904941500FC9AE6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D162CDE91904941500FC9AE6;
+			remoteGlobalIDString = D1D951321E9FADC000778C78;
 			remoteInfo = StateMachine;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		D162CDE81904941500FC9AE6 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				D1C8DCB9193C077B00675E16 /* StateMachineDelegate.h in CopyFiles */,
-				D162CDF31904941500FC9AE6 /* StateMachine.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		D110A4531905EC1200592094 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
-		D110A4541905EC1200592094 /* Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graph.m; sourceTree = "<group>"; };
-		D162CDEA1904941500FC9AE6 /* libStateMachine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStateMachine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1116BBB1EA58EA3006348FB /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
 		D162CDED1904941500FC9AE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D162CDF11904941500FC9AE6 /* StateMachine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StateMachine-Prefix.pch"; sourceTree = "<group>"; };
-		D162CDF21904941500FC9AE6 /* StateMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateMachine.h; sourceTree = "<group>"; };
-		D162CDF41904941500FC9AE6 /* StateMachine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateMachine.m; sourceTree = "<group>"; };
-		D162CDFA1904941500FC9AE6 /* StateMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D162CDFB1904941500FC9AE6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D162CDFE1904941500FC9AE6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D162CE051904941500FC9AE6 /* StateMachineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StateMachineTests-Info.plist"; sourceTree = "<group>"; };
-		D162CE071904941500FC9AE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D162CE091904941500FC9AE6 /* GraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphTests.m; sourceTree = "<group>"; };
 		D162CE13190494CD00FC9AE6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D162CE141904964C00FC9AE6 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
-		D1C8DCB6193BB26100675E16 /* StateMachineTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateMachineTests.m; sourceTree = "<group>"; };
-		D1C8DCB8193BFC8700675E16 /* StateMachineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachineDelegate.h; sourceTree = "<group>"; };
-		D1C8DCBA193C07AF00675E16 /* StateMachineTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachineTestDelegate.h; sourceTree = "<group>"; };
-		D1C8DCBB193C07AF00675E16 /* StateMachineTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateMachineTestDelegate.m; sourceTree = "<group>"; };
-		D1C8DCBD193C09B500675E16 /* documentation.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; path = documentation.cfg; sourceTree = "<group>"; };
+		D1D951281E9FAD6C00778C78 /* StateMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateMachine.h; sourceTree = "<group>"; };
+		D1D951291E9FAD6C00778C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D951331E9FADC000778C78 /* StateMachine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StateMachine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1D9513C1E9FBEB500778C78 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		D1D951421E9FE59300778C78 /* StateMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1D951441E9FE59300778C78 /* StateMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachineTests.swift; sourceTree = "<group>"; };
+		D1D951461E9FE59300778C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D9514D1E9FE5AE00778C78 /* GraphTestCenarios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphTestCenarios.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D162CDE71904941500FC9AE6 /* Frameworks */ = {
+		D1D9512F1E9FADC000778C78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D162CDEE1904941500FC9AE6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D162CDF71904941500FC9AE6 /* Frameworks */ = {
+		D1D9513F1E9FE59300778C78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D162CDFC1904941500FC9AE6 /* XCTest.framework in Frameworks */,
-				D162CE021904941500FC9AE6 /* libStateMachine.a in Frameworks */,
-				D162CDFF1904941500FC9AE6 /* UIKit.framework in Frameworks */,
-				D162CDFD1904941500FC9AE6 /* Foundation.framework in Frameworks */,
+				D1D951471E9FE59300778C78 /* StateMachine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D110A4521905EBC200592094 /* Graph */ = {
-			isa = PBXGroup;
-			children = (
-				D110A4531905EC1200592094 /* Graph.h */,
-				D110A4541905EC1200592094 /* Graph.m */,
-			);
-			path = Graph;
-			sourceTree = "<group>";
-		};
 		D162CDE11904941500FC9AE6 = {
 			isa = PBXGroup;
 			children = (
-				D1C8DCBD193C09B500675E16 /* documentation.cfg */,
 				D162CE141904964C00FC9AE6 /* LICENSE.md */,
 				D162CE13190494CD00FC9AE6 /* README.md */,
-				D162CDEF1904941500FC9AE6 /* StateMachine */,
-				D162CE031904941500FC9AE6 /* StateMachineTests */,
+				D1D951271E9FAD6C00778C78 /* StateMachine */,
+				D1D951431E9FE59300778C78 /* StateMachineTests */,
 				D162CDEC1904941500FC9AE6 /* Frameworks */,
 				D162CDEB1904941500FC9AE6 /* Products */,
 			);
@@ -131,8 +75,8 @@
 		D162CDEB1904941500FC9AE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D162CDEA1904941500FC9AE6 /* libStateMachine.a */,
-				D162CDFA1904941500FC9AE6 /* StateMachineTests.xctest */,
+				D1D951331E9FADC000778C78 /* StateMachine.framework */,
+				D1D951421E9FE59300778C78 /* StateMachineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,57 +91,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D162CDEF1904941500FC9AE6 /* StateMachine */ = {
+		D1D951271E9FAD6C00778C78 /* StateMachine */ = {
 			isa = PBXGroup;
 			children = (
-				D110A4521905EBC200592094 /* Graph */,
-				D1C8DCB8193BFC8700675E16 /* StateMachineDelegate.h */,
-				D162CDF21904941500FC9AE6 /* StateMachine.h */,
-				D162CDF41904941500FC9AE6 /* StateMachine.m */,
-				D162CDF01904941500FC9AE6 /* Supporting Files */,
+				D1D9513B1E9FAE3800778C78 /* support files */,
+				D1D9513C1E9FBEB500778C78 /* Graph.swift */,
+				D1116BBB1EA58EA3006348FB /* StateMachine.swift */,
 			);
 			path = StateMachine;
 			sourceTree = "<group>";
 		};
-		D162CDF01904941500FC9AE6 /* Supporting Files */ = {
+		D1D9513B1E9FAE3800778C78 /* support files */ = {
 			isa = PBXGroup;
 			children = (
-				D162CDF11904941500FC9AE6 /* StateMachine-Prefix.pch */,
+				D1D951281E9FAD6C00778C78 /* StateMachine.h */,
+				D1D951291E9FAD6C00778C78 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			name = "support files";
 			sourceTree = "<group>";
 		};
-		D162CE031904941500FC9AE6 /* StateMachineTests */ = {
+		D1D951431E9FE59300778C78 /* StateMachineTests */ = {
 			isa = PBXGroup;
 			children = (
-				D1C8DCB6193BB26100675E16 /* StateMachineTests.m */,
-				D162CE091904941500FC9AE6 /* GraphTests.m */,
-				D162CE041904941500FC9AE6 /* Supporting Files */,
-				D1C8DCBA193C07AF00675E16 /* StateMachineTestDelegate.h */,
-				D1C8DCBB193C07AF00675E16 /* StateMachineTestDelegate.m */,
+				D1D951441E9FE59300778C78 /* StateMachineTests.swift */,
+				D1D951461E9FE59300778C78 /* Info.plist */,
+				D1D9514D1E9FE5AE00778C78 /* GraphTestCenarios.swift */,
 			);
 			path = StateMachineTests;
 			sourceTree = "<group>";
 		};
-		D162CE041904941500FC9AE6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D162CE051904941500FC9AE6 /* StateMachineTests-Info.plist */,
-				D162CE061904941500FC9AE6 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D1D951301E9FADC000778C78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		D162CDE91904941500FC9AE6 /* StateMachine */ = {
+		D1D951321E9FADC000778C78 /* StateMachine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D162CE0D1904941500FC9AE6 /* Build configuration list for PBXNativeTarget "StateMachine" */;
+			buildConfigurationList = D1D951381E9FADC000778C78 /* Build configuration list for PBXNativeTarget "StateMachine" */;
 			buildPhases = (
-				D162CDE61904941500FC9AE6 /* Sources */,
-				D162CDE71904941500FC9AE6 /* Frameworks */,
-				D162CDE81904941500FC9AE6 /* CopyFiles */,
+				D1D9512E1E9FADC000778C78 /* Sources */,
+				D1D9512F1E9FADC000778C78 /* Frameworks */,
+				D1D951301E9FADC000778C78 /* Headers */,
+				D1D951311E9FADC000778C78 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -205,25 +148,25 @@
 			);
 			name = StateMachine;
 			productName = StateMachine;
-			productReference = D162CDEA1904941500FC9AE6 /* libStateMachine.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = D1D951331E9FADC000778C78 /* StateMachine.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		D162CDF91904941500FC9AE6 /* StateMachineTests */ = {
+		D1D951411E9FE59300778C78 /* StateMachineTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D162CE101904941500FC9AE6 /* Build configuration list for PBXNativeTarget "StateMachineTests" */;
+			buildConfigurationList = D1D9514A1E9FE59300778C78 /* Build configuration list for PBXNativeTarget "StateMachineTests" */;
 			buildPhases = (
-				D162CDF61904941500FC9AE6 /* Sources */,
-				D162CDF71904941500FC9AE6 /* Frameworks */,
-				D162CDF81904941500FC9AE6 /* Resources */,
+				D1D9513E1E9FE59300778C78 /* Sources */,
+				D1D9513F1E9FE59300778C78 /* Frameworks */,
+				D1D951401E9FE59300778C78 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D162CE011904941500FC9AE6 /* PBXTargetDependency */,
+				D1D951491E9FE59300778C78 /* PBXTargetDependency */,
 			);
 			name = StateMachineTests;
 			productName = StateMachineTests;
-			productReference = D162CDFA1904941500FC9AE6 /* StateMachineTests.xctest */;
+			productReference = D1D951421E9FE59300778C78 /* StateMachineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -232,8 +175,22 @@
 		D162CDE21904941500FC9AE6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Ronaldo Faria Lima";
+				TargetAttributes = {
+					D1D951321E9FADC000778C78 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = GR2X4M499N;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					D1D951411E9FE59300778C78 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = GR2X4M499N;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = D162CDE51904941500FC9AE6 /* Build configuration list for PBXProject "StateMachine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -247,80 +204,57 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D162CDE91904941500FC9AE6 /* StateMachine */,
-				D162CDF91904941500FC9AE6 /* StateMachineTests */,
-				D1C8DCC5193C0CD400675E16 /* Documentation */,
+				D1D951321E9FADC000778C78 /* StateMachine */,
+				D1D951411E9FE59300778C78 /* StateMachineTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D162CDF81904941500FC9AE6 /* Resources */ = {
+		D1D951311E9FADC000778C78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D162CE081904941500FC9AE6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1D951401E9FE59300778C78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		D1C8DCC9193C0CFC00675E16 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "$DOXYGEN_PATH $SOURCE_ROOT/documentation.cfg\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		D162CDE61904941500FC9AE6 /* Sources */ = {
+		D1D9512E1E9FADC000778C78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D110A4551905EC1200592094 /* Graph.m in Sources */,
-				D162CDF51904941500FC9AE6 /* StateMachine.m in Sources */,
+				D1D9513D1E9FBEB500778C78 /* Graph.swift in Sources */,
+				D1116BBC1EA58EA3006348FB /* StateMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D162CDF61904941500FC9AE6 /* Sources */ = {
+		D1D9513E1E9FE59300778C78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D162CE0A1904941500FC9AE6 /* GraphTests.m in Sources */,
-				D1C8DCB7193BB26100675E16 /* StateMachineTests.m in Sources */,
-				D1C8DCBC193C07AF00675E16 /* StateMachineTestDelegate.m in Sources */,
+				D1D9514E1E9FE5AE00778C78 /* GraphTestCenarios.swift in Sources */,
+				D1D951451E9FE59300778C78 /* StateMachineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D162CE011904941500FC9AE6 /* PBXTargetDependency */ = {
+		D1D951491E9FE59300778C78 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D162CDE91904941500FC9AE6 /* StateMachine */;
-			targetProxy = D162CE001904941500FC9AE6 /* PBXContainerItemProxy */;
+			target = D1D951321E9FADC000778C78 /* StateMachine */;
+			targetProxy = D1D951481E9FE59300778C78 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D162CE061904941500FC9AE6 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D162CE071904941500FC9AE6 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D162CE0B1904941500FC9AE6 /* Debug */ = {
@@ -336,12 +270,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -354,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -373,97 +313,156 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D162CE0E1904941500FC9AE6 /* Debug */ = {
+		D1D951391E9FADC000778C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/StateMachine.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StateMachine/StateMachine-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GR2X4M499N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = StateMachine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nineteenapps.StateMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		D162CE0F1904941500FC9AE6 /* Release */ = {
+		D1D9513A1E9FADC000778C78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/StateMachine.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StateMachine/StateMachine-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GR2X4M499N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = StateMachine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nineteenapps.StateMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		D162CE111904941500FC9AE6 /* Debug */ = {
+		D1D9514B1E9FE59300778C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StateMachine/StateMachine-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "StateMachineTests/StateMachineTests-Info.plist";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = GR2X4M499N;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = StateMachineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nineteenapps.StateMachineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		D162CE121904941500FC9AE6 /* Release */ = {
+		D1D9514C1E9FE59300778C78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StateMachine/StateMachine-Prefix.pch";
-				INFOPLIST_FILE = "StateMachineTests/StateMachineTests-Info.plist";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GR2X4M499N;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = StateMachineTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nineteenapps.StateMachineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-		D1C8DCC7193C0CD400675E16 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		D1C8DCC8193C0CD400675E16 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -479,31 +478,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D162CE0D1904941500FC9AE6 /* Build configuration list for PBXNativeTarget "StateMachine" */ = {
+		D1D951381E9FADC000778C78 /* Build configuration list for PBXNativeTarget "StateMachine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D162CE0E1904941500FC9AE6 /* Debug */,
-				D162CE0F1904941500FC9AE6 /* Release */,
+				D1D951391E9FADC000778C78 /* Debug */,
+				D1D9513A1E9FADC000778C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D162CE101904941500FC9AE6 /* Build configuration list for PBXNativeTarget "StateMachineTests" */ = {
+		D1D9514A1E9FE59300778C78 /* Build configuration list for PBXNativeTarget "StateMachineTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D162CE111904941500FC9AE6 /* Debug */,
-				D162CE121904941500FC9AE6 /* Release */,
+				D1D9514B1E9FE59300778C78 /* Debug */,
+				D1D9514C1E9FE59300778C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		D1C8DCC6193C0CD400675E16 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D1C8DCC7193C0CD400675E16 /* Debug */,
-				D1C8DCC8193C0CD400675E16 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
