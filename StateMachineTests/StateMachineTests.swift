@@ -8,28 +8,61 @@
 
 import XCTest
 
+@testable import StateMachine
+
 class StateMachineTests: XCTestCase {
-    
+    var sm: StateMachine!
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        sm = StateMachine(initialState: "A")
+        // Build the following graph:
+        // A -> B -> C
+        // |
+        // V
+        // D -> E -> F
+        sm.addTransition(from: "A", to: "B")
+        sm.addTransition(from: "A", to: "D")
+        sm.addTransition(from: "B", to: "C")
+        sm.addTransition(from: "D", to: "E")
+        sm.addTransition(from: "E", to: "F")
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        sm = nil
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    /// Tests the state machine basic setup
+    func testBasicScenario() {
+        do {
+            // Those must work
+            try sm.setCurrentState(to: "B")
+            try sm.setCurrentState(to: "C")
+        } catch {
+            XCTFail()
+        }
+        do {
+            try sm.setCurrentState(to: "B")
+            XCTFail()
+        } catch {
+            // Must throw an exception
         }
     }
     
+    func testRewinds() {
+        do {
+            // Those must work
+            try sm.setCurrentState(to: "B")
+            try sm.setCurrentState(to: "C")
+        } catch {
+            XCTFail()
+        }
+        sm.rewind()
+        do {
+            // Must work.
+            try sm.setCurrentState(to: "B")
+        } catch {
+            XCTFail()
+        }
+    }
 }

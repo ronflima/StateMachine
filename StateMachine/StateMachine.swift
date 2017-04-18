@@ -8,12 +8,20 @@
 
 import Foundation
 
+
+/// Errors thrown by StateMachine methods
+///
+/// - invalidState: State provided is invalid
+/// - invalidStateTransition: Tried to execute an invalid transition.
 public enum StateMachineError: Error {
     case invalidState
     case invalidStateTransition
 }
 
 public struct StateMachine {
+    /// State machine delegate. Optional
+    public var delegate: StateMachineDelegate?
+    
     /// State graph. Contains all possible states and transitions
     fileprivate var stateGraph = Graph()
     
@@ -47,16 +55,22 @@ public struct StateMachine {
     /// new one.
     public mutating func setCurrentState(to newState: String) throws {
         if !stateGraph.vertexes.contains(newState) {
+            delegate?.failedToTransition?(from: _currState, to: newState)
             throw StateMachineError.invalidState
         }
         if let edges = stateGraph.edges(for: currentState) {
             if !edges.contains(newState) {
+                delegate?.failedToTransition?(from: _currState, to: newState)
                 throw StateMachineError.invalidStateTransition
             }
         } else {
+            delegate?.failedToTransition?(from: _currState, to: newState)
+            delegate?.failedToTransition?(from: _currState, to: newState)
             throw StateMachineError.invalidStateTransition
         }
+        delegate?.willTransition?(from: _currState, to: newState)
         _currState = newState
+        delegate?.didTransition?(from: _currState, to: newState)
     }
     
     /// Adds a state transition from a state to another.
@@ -66,5 +80,10 @@ public struct StateMachine {
     ///   - to: State to which transition will occurr
     public mutating func addTransition(from: String, to: String) {
         stateGraph.addEdge(from: from, to: to)
+    }
+    
+    /// Rewinds the state machine to its initial state
+    public mutating func rewind() {
+        _currState = initialState
     }
 }

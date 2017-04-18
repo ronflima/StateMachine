@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D1116BBC1EA58EA3006348FB /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1116BBB1EA58EA3006348FB /* StateMachine.swift */; };
+		D1A570DC1EA639B10019AE76 /* StateMachineDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A570DB1EA639B10019AE76 /* StateMachineDelegate.swift */; };
 		D1D9513D1E9FBEB500778C78 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D9513C1E9FBEB500778C78 /* Graph.swift */; };
 		D1D951451E9FE59300778C78 /* StateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D951441E9FE59300778C78 /* StateMachineTests.swift */; };
 		D1D951471E9FE59300778C78 /* StateMachine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D951331E9FADC000778C78 /* StateMachine.framework */; };
@@ -31,6 +32,7 @@
 		D162CDFE1904941500FC9AE6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D162CE13190494CD00FC9AE6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D162CE141904964C00FC9AE6 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
+		D1A570DB1EA639B10019AE76 /* StateMachineDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachineDelegate.swift; sourceTree = "<group>"; };
 		D1D951281E9FAD6C00778C78 /* StateMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateMachine.h; sourceTree = "<group>"; };
 		D1D951291E9FAD6C00778C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1D951331E9FADC000778C78 /* StateMachine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StateMachine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 				D1D9513B1E9FAE3800778C78 /* support files */,
 				D1D9513C1E9FBEB500778C78 /* Graph.swift */,
 				D1116BBB1EA58EA3006348FB /* StateMachine.swift */,
+				D1A570DB1EA639B10019AE76 /* StateMachineDelegate.swift */,
 			);
 			path = StateMachine;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D9513D1E9FBEB500778C78 /* Graph.swift in Sources */,
+				D1A570DC1EA639B10019AE76 /* StateMachineDelegate.swift in Sources */,
 				D1116BBC1EA58EA3006348FB /* StateMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
